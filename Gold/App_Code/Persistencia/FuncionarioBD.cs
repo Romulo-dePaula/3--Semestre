@@ -102,7 +102,7 @@ namespace Gold.Persistencia
             System.Data.IDataReader objDataReader;
 
             objConexao = Mapped.Connection();
-            objCommand = Mapped.Command("SELECT * FROM TBL_FUNCIONARIO WHERE FUN_CPF = ?cpf AND FUN_SENHA= ?senha FUN_ATIVADO=1", objConexao);
+            objCommand = Mapped.Command("SELECT * FROM TBL_FUNCIONARIO WHERE FUN_CPF = ?cpf AND FUN_SENHA= ?senha and FUN_ATIVADO=1", objConexao);
             objCommand.Parameters.Add(Mapped.Parameter("?cpf", CPF));
             objCommand.Parameters.Add(Mapped.Parameter("?senha", Senha));
 
