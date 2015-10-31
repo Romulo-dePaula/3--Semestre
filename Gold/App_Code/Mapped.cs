@@ -16,7 +16,7 @@ using System.Data;
 using System.Configuration;
  
 
-namespace WebFESBD
+namespace Gold
 {
     /// <summary>
     /// Summary description for Mapped
